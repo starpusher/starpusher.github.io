@@ -46,7 +46,7 @@ header nav ul li a:hover {
 /* Main Layout */
 main {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Gesamtes Layout bleibt einspaltig */
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -135,9 +135,9 @@ main {
 
 .studiengaenge-container {
     display: flex;
-    flex-wrap: wrap; /* Flexibles Layout für mehrere Kästchen */
-    gap: 20px; /* Abstand zwischen Kästchen */
-    justify-content: space-between;
+    flex-wrap: wrap; /* Mehrere Zeilen zulassen */
+    gap: 20px; /* Abstand zwischen den Kacheln */
+    justify-content: space-between; /* Kacheln gleichmäßig verteilen */
 }
 
 .studiengang {
@@ -145,9 +145,10 @@ main {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(45% - 20px); /* Responsive Kästchenbreite */
-    min-width: 280px; /* Minimalbreite für Kästchen */
-    max-width: 400px;
+    flex: 1 1 calc(23% - 20px); /* Jede Kachel nimmt ca. 23% der Breite ein */
+    min-width: 220px; /* Minimalbreite für schmale Bildschirme */
+    max-width: 300px; /* Maximalbreite der Kacheln */
+    text-align: center;
 }
 
 .studiengang h3 {
