@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dein Campus - HTW Saar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Dein Campus - HTW Saar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="deine-hochschule.html">Deine Hochschule</a></li>
+                <li><a href="dein-campus.html">Dein Campus</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hauptinhalt -->
+    <main>
+        <!-- Navigation innerhalb der Seite -->
+        <nav class="section-nav">
+            <button onclick="scrollToSection('mensa')">Mensa</button>
+            <button onclick="scrollToSection('asta-fachschaften')">Asta und Fachschaften</button>
+            <button onclick="scrollToSection('bibliothek')">Bibliothek</button>
+            <button onclick="scrollToSection('it-service')">IT-Service</button>
+            <button onclick="scrollToSection('studierendenservice')">Studierendenservice & Sekretariat</button>
+            <button onclick="scrollToSection('moodle-sim')">Moodle & SIM</button>
+        </nav>
+
+        <!-- Abschnitt Mensa -->
+        <section id="mensa">
+            <h2>Mensa</h2>
+            <p>Die Mensa am Campus Rotenbühl befindet sich im Gebäude B im Untergeschoss.</p>
+            <ul>
+                <li>Montag bis Freitag: 7:00 bis 14:15 Uhr</li>
+                <li>Frühstück: 7:00 bis 11:15 Uhr</li>
+                <li>Mittagessen: 11:15 bis 14:15 Uhr</li>
+            </ul>
+            <p><em>Vorlesungsfreie Zeit:</em> Montag bis Freitag: 7:30 bis 14:00 Uhr</p>
+            <a href="mensa-plan.pdf" class="button" download>Mensa Essensplan herunterladen</a>
+        </section>
+
+        <!-- Abschnitt Asta und Fachschaften -->
+        <section id="asta-fachschaften">
+            <h2>Asta und Fachschaften</h2>
+            <h3>Asta</h3>
+            <p>Öffnungszeiten:</p>
+            <ul>
+                <li>Vor Ort: Mo-Mi: 7:30 - 15:00 Uhr</li>
+                <li>Homeoffice: Do: 7:00 - 15:00 Uhr, Fr: 7:00 - 13:00 Uhr</li>
+            </ul>
+            <p>Telefon: 0681/5867 - 104<br>E-Mail: <a href="mailto:asta@htwsaar.de">asta@htwsaar.de</a></p>
+            <p>Adresse: Raum 10.01.13, Goebenstrasse 40, 66117 Saarbrücken</p>
+            <a href="https://asta-htw.de" target="_blank">Zur Asta-Seite</a>
+
+            <h3>Fachschaften</h3>
+            <ul>
+                <li>Architektur: <a href="mailto:fsa@htwsaar.de">fsa@htwsaar.de</a>, Raum D-1-04</li>
+                <li>Bauingenieurwesen: <a href="mailto:fs-bi@htwsaar.de">fs-bi@htwsaar.de</a>, Tel: (0681) 58 67 - 495</li>
+                <li>Ingenieurwissenschaften: <a href="mailto:fs-ingwi@htwsaar.de">fs-ingwi@htwsaar.de</a>, Raum 2214</li>
+                <li>Sozialwissenschaften: <a href="mailto:fs-sp@htwsaar.de">fs-sp@htwsaar.de</a>, Raum 11.05.07</li>
+                <li>Wirtschaftswissenschaften: <a href="mailto:Fachschaft-wiwi@htwsaar.de">Fachschaft-wiwi@htwsaar.de</a>, Tel: (0681) 58 67 - 580, Raum A-K-04</li>
+            </ul>
+        </section>
+
+        <!-- Abschnitt Bibliothek -->
+        <section id="bibliothek">
+            <h2>Bibliothek</h2>
+            <p>Die Bibliothek befindet sich im Untergeschoss des Gebäudes A, Zimmer A-K-12.</p>
+            <p>Schwerpunkte:</p>
+            <ul>
+                <li>Betriebswirtschaftslehre</li>
+                <li>Volkswirtschaftslehre</li>
+                <li>Recht & Steuerrecht</li>
+                <li>Touristik</li>
+                <li>EDV</li>
+            </ul>
+            <a href="https://www.htwsaar.de/studium-und-lehre/service-und-beratung/rund-ums-studium/bibliothek/bibliothek" target="_blank">Zur Bibliotheksseite</a>
+        </section>
+
+        <!-- Abschnitt IT-Service -->
+        <section id="it-service">
+            <h2>IT-Service</h2>
+            <p>Raum: A-E-01<br>Telefon: +49 (0) 681 / 5867-99444<br>E-Mail: <a href="mailto:wiwi-support@htwsaar.de">wiwi-support@htwsaar.de</a></p>
+            <ul>
+                <li>Öffnungszeiten: Montag bis Freitag, 11:00 - 14:30 Uhr</li>
+            </ul>
+            <a href="https://www.htwsaar.de/wiwi/fakultaet-und-personen/it-team" target="_blank">Mehr Infos</a><br>
+            <a href="https://www.hiz-saarland.de/dienste/wlan" target="_blank">WLAN-Anleitung</a>
+        </section>
+
+        <!-- Abschnitt Studierendenservice -->
+        <section id="studierendenservice">
+            <h2>Studierendenservice & Sekretariat</h2>
+            <h3>Studierendenservice</h3>
+            <p>Öffnungszeiten:</p>
+            <ul>
+                <li>Montag bis Freitag: 9:00 - 11:00 Uhr, 13:00 - 16:00 Uhr</li>
+            </ul>
+            <p>Telefon: +49 (0) 681 / 5867 - 115<br>E-Mail: <a href="mailto:studierendenservice@htwsaar.de">studierendenservice@htwsaar.de</a></p>
+            <p>Adresse: Haus des Wissens, Gebäude 11, Malstatter Straße 17, Raum 11.01.17</p>
+            <a href="https://www.htwsaar.de/wiwi/fakultaet-und-personen/fakultaetssekretariat" target="_blank">Mehr Infos</a>
+        </section>
+
+        <!-- Abschnitt Moodle & SIM -->
+        <section id="moodle-sim">
+            <h2>Moodle & SIM</h2>
+            <p><strong>Moodle:</strong> <a href="https://moodle.htwsaar.de/?redirect=0" target="_blank">Zur Moodle-Plattform</a></p>
+            <p><strong>SIM:</strong> <a href="https://sim.htwsaar.de" target="_blank">Zum SIM-Portal</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hochschule für Technik und Wirtschaft des Saarlandes - 
+            <a href="impressum.html">Impressum</a> | 
+            <a href="datenschutz.html">Datenschutz</a>
+        </p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
