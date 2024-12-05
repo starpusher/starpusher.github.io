@@ -16,14 +16,72 @@ header {
     text-align: center;
 }
 
-/* Main Section */
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Layout */
 main {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.9); /* Hintergrund für Lesbarkeit */
+}
+
+/* Hauptinhalt */
+#intro, #video {
+    flex: 3; /* Größerer Platz für den Hauptinhalt */
+}
+
+/* Rechte Spalte (Aktuelles) */
+#aktuelles {
+    flex: 1; /* Kleinere Breite */
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: 400px; /* Begrenzte Höhe */
+    overflow-y: auto; /* Scrollbar, wenn zu viel Inhalt */
+}
+
+#aktuelles h3 {
+    margin-top: 0;
+}
+
+#aktuelles ul {
+    list-style: none;
+    padding: 0;
+}
+
+#aktuelles ul li {
+    margin-bottom: 10px;
+    font-size: 0.9em;
 }
 
 /* Video-Einbettung */
