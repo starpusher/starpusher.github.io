@@ -24,6 +24,7 @@
     <main>
         <!-- Navigation innerhalb der Seite -->
         <nav class="section-nav">
+            <button onclick="scrollToSection('campusplan')">Campusplan</button>
             <button onclick="scrollToSection('mensa')">Mensa</button>
             <button onclick="scrollToSection('asta-fachschaften')">Asta und Fachschaften</button>
             <button onclick="scrollToSection('bibliothek')">Bibliothek</button>
@@ -32,8 +33,17 @@
             <button onclick="scrollToSection('moodle-sim')">Moodle & SIM</button>
         </nav>
 
+        <!-- Abschnitt Campusplan -->
+        <section id="campusplan" class="highlight-box">
+            <h2>Campusplan</h2>
+            <img src="Orientierungsplan_CRB_072017.jpg" alt="Campusplan Rotenbühl" class="responsive-img">
+            <a href="https://www.htwsaar.de/hochschule/standorte-und-kontakt/campus-rotenbuehl/uebersichtsplan-campus-rotenbuehl/uebersichtsplan-campus-rotenbuehl/@@download/file/Orientierungsplan_CRB_072017.pdf" class="button" download>
+                Campusplan herunterladen
+            </a>
+        </section>
+
         <!-- Abschnitt Mensa -->
-        <section id="mensa">
+        <section id="mensa" class="highlight-box">
             <h2>Mensa</h2>
             <p>Die Mensa am Campus Rotenbühl befindet sich im Gebäude B im Untergeschoss.</p>
             <ul>
@@ -46,7 +56,7 @@
         </section>
 
         <!-- Abschnitt Asta und Fachschaften -->
-        <section id="asta-fachschaften">
+        <section id="asta-fachschaften" class="highlight-box">
             <h2>Asta und Fachschaften</h2>
             <h3>Asta</h3>
             <p>Öffnungszeiten:</p>
@@ -66,10 +76,11 @@
                 <li>Sozialwissenschaften: <a href="mailto:fs-sp@htwsaar.de">fs-sp@htwsaar.de</a>, Raum 11.05.07</li>
                 <li>Wirtschaftswissenschaften: <a href="mailto:Fachschaft-wiwi@htwsaar.de">Fachschaft-wiwi@htwsaar.de</a>, Tel: (0681) 58 67 - 580, Raum A-K-04</li>
             </ul>
+            <a href="https://www.htwsaar.de/hochschule/organisation/asta/copy2_of_index_2014.html" target="_blank">Mehr Infos zu den Fachschaften</a>
         </section>
 
         <!-- Abschnitt Bibliothek -->
-        <section id="bibliothek">
+        <section id="bibliothek" class="highlight-box">
             <h2>Bibliothek</h2>
             <p>Die Bibliothek befindet sich im Untergeschoss des Gebäudes A, Zimmer A-K-12.</p>
             <p>Schwerpunkte:</p>
@@ -84,7 +95,7 @@
         </section>
 
         <!-- Abschnitt IT-Service -->
-        <section id="it-service">
+        <section id="it-service" class="highlight-box">
             <h2>IT-Service</h2>
             <p>Raum: A-E-01<br>Telefon: +49 (0) 681 / 5867-99444<br>E-Mail: <a href="mailto:wiwi-support@htwsaar.de">wiwi-support@htwsaar.de</a></p>
             <ul>
@@ -95,9 +106,8 @@
         </section>
 
         <!-- Abschnitt Studierendenservice -->
-        <section id="studierendenservice">
+        <section id="studierendenservice" class="highlight-box">
             <h2>Studierendenservice & Sekretariat</h2>
-            <h3>Studierendenservice</h3>
             <p>Öffnungszeiten:</p>
             <ul>
                 <li>Montag bis Freitag: 9:00 - 11:00 Uhr, 13:00 - 16:00 Uhr</li>
@@ -108,10 +118,14 @@
         </section>
 
         <!-- Abschnitt Moodle & SIM -->
-        <section id="moodle-sim">
+        <section id="moodle-sim" class="highlight-box">
             <h2>Moodle & SIM</h2>
-            <p><strong>Moodle:</strong> <a href="https://moodle.htwsaar.de/?redirect=0" target="_blank">Zur Moodle-Plattform</a></p>
-            <p><strong>SIM:</strong> <a href="https://sim.htwsaar.de" target="_blank">Zum SIM-Portal</a></p>
+            <p><strong>Moodle:</strong> Die zentrale Plattform für digitale Lehre und Studienorganisation. 
+                <a href="https://moodle.htwsaar.de/?redirect=0" target="_blank">Zur Moodle-Plattform</a>
+            </p>
+            <p><strong>SIM:</strong> Verwaltung von Studierendendaten, Rückmeldung und Prüfungsanmeldung. 
+                <a href="https://sim.htwsaar.de" target="_blank">Zum SIM-Portal</a>
+            </p>
         </section>
     </main>
 
@@ -119,14 +133,4 @@
     <footer>
         <p>&copy; 2024 Hochschule für Technik und Wirtschaft des Saarlandes - 
             <a href="impressum.html">Impressum</a> | 
-            <a href="datenschutz.html">Datenschutz</a>
-        </p>
-    </footer>
-
-    <script>
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
-</body>
-</html>
+            <a href
