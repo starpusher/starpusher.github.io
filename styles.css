@@ -52,16 +52,21 @@ main {
     margin: 0 auto;
 }
 
-/* Stile für Startseite (index.html) */
-#index-intro,
-#index-video {
+/* Hauptinhalt für die Startseite */
+#intro {
     flex: 3;
-    margin-right: 50px;
+    margin-right: 50px; /* Abstand nach rechts, verschiebt "Willkommen an der HTW" nach links */
 }
 
-#index-video-text {
-    margin-top: 20px;
-    max-width: calc(100% - 1cm);
+#video {
+    flex: 3;
+    margin-right: 50px; /* Abstand nach rechts, gleicht Text und Video aus */
+}
+
+/* Video-Beschreibung */
+.video-text {
+    margin-top: 20px; /* Abstand über dem Text */
+    max-width: calc(100% - 1cm); /* Textfeld 1 cm schmaler als Video */
     font-size: 1em;
     line-height: 1.4;
 }
@@ -69,7 +74,7 @@ main {
 /* Rechte Spalte (Aktuelles) */
 #aktuelles {
     flex: 1;
-    margin-left: 40px;
+    margin-left: 40px; /* Abstand nach links, verschiebt "Aktuelles" weiter nach rechts */
     background: rgba(255, 255, 255, 0.9);
     padding: 15px;
     border-radius: 10px;
@@ -77,7 +82,7 @@ main {
     max-height: 600px;
     overflow-y: auto;
     position: relative;
-    right: -20px;
+    right: -20px; /* Feine Justierung, verschiebt "Aktuelles" noch weiter nach rechts */
 }
 
 #aktuelles h3 {
@@ -113,58 +118,52 @@ main {
     border: none;
 }
 
-/* Spezifische Stile für die Seite "Deine Hochschule" */
-body.deine-hochschule main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: block; /* Einspaltiges Layout für die Inhalte */
+/* Beschreibung der Hochschule */
+#beschreibung p {
+    margin-bottom: 15px;
 }
 
-body.deine-hochschule #beschreibung {
-    margin-bottom: 30px;
+/* Studiengänge */
+#studiengaenge {
+    margin-top: 30px;
 }
 
-body.deine-hochschule #beschreibung h2 {
+#studiengaenge h2 {
     color: #2DC64D;
-    border-bottom: 2px solid #20A6DF;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-body.deine-hochschule #beschreibung p {
-    margin-bottom: 15px;
-}
-
-body.deine-hochschule #studiengaenge {
-    margin-bottom: 30px;
-}
-
-body.deine-hochschule #studiengaenge h2 {
-    color: #2DC64D;
-    border-bottom: 2px solid #20A6DF;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-body.deine-hochschule .faculty {
     margin-bottom: 20px;
 }
 
-body.deine-hochschule .faculty h3 {
-    margin-top: 0;
-    color: #20A6DF;
+.studiengaenge-container {
+    display: flex;
+    flex-wrap: wrap; /* Flexibles Layout für mehrere Kästchen */
+    gap: 20px; /* Abstand zwischen Kästchen */
+    justify-content: space-between;
 }
 
-body.deine-hochschule .faculty ul {
+.studiengang {
+    background: rgba(240, 240, 240, 1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(45% - 20px); /* Responsive Kästchenbreite */
+    min-width: 280px; /* Minimalbreite für Kästchen */
+    max-width: 400px;
+}
+
+.studiengang h3 {
+    color: #20A6DF;
+    margin-bottom: 10px;
+}
+
+.studiengang ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-body.deine-hochschule .faculty ul li {
-    margin-bottom: 5px;
-    line-height: 1.5;
+.studiengang ul li {
     font-size: 0.9em;
+    margin-bottom: 5px;
 }
 
 /* Footer */
