@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universitäts-Website</title>
+    <title>Hochschule für Technik und Wirtschaft des Saarlandes (HTW)</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Willkommen an der Universität</h1>
+        <h1>Willkommen an der Hochschule für Technik und Wirtschaft des Saarlandes</h1>
+        <nav>
+            <ul>
+                <li><a href="anfahrt.html">Anfahrt</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="dein-campus.html">Dein Campus</a></li>
+                <li><a href="gebaeudeplan.html">Gebäudeplan</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Hauptinhalt -->
     <main>
+        <!-- Begrüßungstext -->
         <section id="intro">
-            <!-- Eingebettetes YouTube-Video -->
+            <h2>Willkommen an der HTW</h2>
+            <p>Die Hochschule für Technik und Wirtschaft des Saarlandes (HTW) bietet Ihnen eine ideale Plattform für modernes Lernen, Forschen und Vernetzen. Unser Campus ist nicht nur ein Ort des Wissens, sondern auch eine lebendige Gemeinschaft, die Sie auf Ihrem akademischen und beruflichen Weg unterstützt.</p>
+        </section>
+
+        <!-- Eingebettetes YouTube-Video -->
+        <section id="video">
             <div class="video-container">
                 <iframe 
                     src="https://www.youtube.com/embed/jK3cMcH9e_c" 
@@ -22,11 +39,28 @@
                     allowfullscreen>
                 </iframe>
             </div>
-            <p>Willkommen auf unserer Website! Hier finden Sie alle wichtigen Informationen über unseren Campus, Studiengänge und Services.</p>
+            <p>Erhalten Sie einen ersten Eindruck von unserem Campus und entdecken Sie, was die HTW für Sie bereithält!</p>
         </section>
+
+        <!-- Aktuelles (rechte Spalte) -->
+        <aside id="aktuelles">
+            <h3>Aktuelles</h3>
+            <ul>
+                <li><strong>10.12.2024:</strong> Weihnachtsmarkt auf dem Campus</li>
+                <li><strong>15.01.2025:</strong> Start der Prüfungsanmeldung</li>
+                <li><strong>01.03.2025:</strong> Semesterstart Sommer 2025</li>
+                <li><strong>20.03.2025:</strong> Karrieremesse HTW</li>
+                <li><strong>25.03.2025:</strong> Workshop: Zeitmanagement für Studierende</li>
+            </ul>
+        </aside>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Universität - <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+        <p>&copy; 2024 Hochschule für Technik und Wirtschaft des Saarlandes - 
+            <a href="impressum.html">Impressum</a> | 
+            <a href="datenschutz.html">Datenschutz</a>
+        </p>
     </footer>
 </body>
 </html>
