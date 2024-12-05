@@ -43,10 +43,10 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main Layout */
+/* Main Layout für Startseite */
 main {
     display: flex;
-    flex-direction: column; /* Gesamtes Layout bleibt einspaltig */
+    justify-content: space-between;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -118,51 +118,58 @@ main {
     border: none;
 }
 
-/* Beschreibung der Hochschule */
+/* Beschreibung der Hochschule (nur für "Deine Hochschule") */
 #beschreibung p {
     margin-bottom: 15px;
 }
 
-/* Studiengänge */
-#studiengaenge {
+/* Studiengänge (nur auf der Seite "Deine Hochschule") */
+body.deine-hochschule main {
+    display: block; /* Einspaltiges Layout nur für "Deine Hochschule" */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body.deine-hochschule #studiengaenge {
     margin-top: 30px;
 }
 
-#studiengaenge h2 {
+body.deine-hochschule #studiengaenge h2 {
     color: #2DC64D;
     margin-bottom: 20px;
 }
 
-.studiengaenge-container {
+body.deine-hochschule .studiengaenge-container {
     display: flex;
     flex-wrap: wrap; /* Mehrere Zeilen zulassen */
     gap: 20px; /* Abstand zwischen den Kacheln */
     justify-content: space-between; /* Kacheln gleichmäßig verteilen */
 }
 
-.studiengang {
+body.deine-hochschule .studiengang {
     background: rgba(240, 240, 240, 1);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(23% - 20px); /* Jede Kachel nimmt ca. 23% der Breite ein */
+    flex: 1 1 calc(25% - 20px); /* Jede Kachel nimmt ca. 25% der Breite ein */
     min-width: 220px; /* Minimalbreite für schmale Bildschirme */
     max-width: 300px; /* Maximalbreite der Kacheln */
     text-align: center;
 }
 
-.studiengang h3 {
+body.deine-hochschule .studiengang h3 {
     color: #20A6DF;
     margin-bottom: 10px;
 }
 
-.studiengang ul {
+body.deine-hochschule .studiengang ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.studiengang ul li {
+body.deine-hochschule .studiengang ul li {
     font-size: 0.9em;
     margin-bottom: 5px;
 }
