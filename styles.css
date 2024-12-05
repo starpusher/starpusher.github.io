@@ -45,77 +45,58 @@ header nav ul li a:hover {
 
 /* Main Layout */
 main {
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    display: block; /* Für konsistentes Layout mit einspaltigem Text */
 }
 
-/* Hauptinhalt */
-#intro {
-    flex: 3;
-    margin-right: 50px; /* Abstand nach rechts, verschiebt "Willkommen an der HTW" nach links */
+/* Beschreibung der Hochschule */
+#beschreibung {
+    margin-bottom: 30px;
 }
 
-#video {
-    flex: 3;
-    margin-right: 50px; /* Abstand nach rechts, gleicht Text und Video aus */
+#beschreibung h2 {
+    color: #2DC64D;
+    border-bottom: 2px solid #20A6DF;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-/* Video-Beschreibung */
-.video-text {
-    margin-top: 20px; /* Abstand über dem Text */
-    max-width: calc(100% - 1cm); /* Textfeld 1 cm schmaler als Video */
-    font-size: 1em;
-    line-height: 1.4;
+#beschreibung p {
+    margin-bottom: 15px;
 }
 
-/* Rechte Spalte (Aktuelles) */
-#aktuelles {
-    flex: 1;
-    margin-left: 40px; /* Abstand nach links, verschiebt "Aktuelles" weiter nach rechts */
-    background: rgba(255, 255, 255, 0.9);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-height: 600px;
-    overflow-y: auto;
-    position: relative;
-    right: -20px; /* Feine Justierung, verschiebt "Aktuelles" noch weiter nach rechts */
+/* Studiengänge */
+#studiengaenge {
+    margin-bottom: 30px;
 }
 
-#aktuelles h3 {
+#studiengaenge h2 {
+    color: #2DC64D;
+    border-bottom: 2px solid #20A6DF;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.faculty {
+    margin-bottom: 20px;
+}
+
+.faculty h3 {
     margin-top: 0;
+    color: #20A6DF;
 }
 
-#aktuelles ul {
-    list-style: none;
+.faculty ul {
+    list-style-type: none;
     padding: 0;
 }
 
-#aktuelles ul li {
-    margin-bottom: 10px;
+.faculty ul li {
+    margin-bottom: 5px;
+    line-height: 1.5;
     font-size: 0.9em;
-}
-
-/* Video-Einbettung */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    margin: 20px 0;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
 }
 
 /* Footer */
