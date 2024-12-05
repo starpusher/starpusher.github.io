@@ -43,7 +43,7 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main Layout für Startseite */
+/* Main Layout */
 main {
     display: flex;
     justify-content: space-between;
@@ -56,18 +56,18 @@ main {
 /* Hauptinhalt für die Startseite */
 #intro {
     flex: 3;
-    margin-right: 50px; /* Abstand nach rechts, verschiebt "Willkommen an der HTW" nach links */
+    margin-right: 50px;
 }
 
 #video {
     flex: 3;
-    margin-right: 50px; /* Abstand nach rechts, gleicht Text und Video aus */
+    margin-right: 50px;
 }
 
 /* Video-Beschreibung */
 .video-text {
-    margin-top: 20px; /* Abstand über dem Text */
-    max-width: calc(100% - 1cm); /* Textfeld 1 cm schmaler als Video */
+    margin-top: 20px;
+    max-width: calc(100% - 1cm);
     font-size: 1em;
     line-height: 1.4;
 }
@@ -75,7 +75,7 @@ main {
 /* Rechte Spalte (Aktuelles) */
 #aktuelles {
     flex: 1;
-    margin-left: 40px; /* Abstand nach links, verschiebt "Aktuelles" weiter nach rechts */
+    margin-left: 40px;
     background: rgba(255, 255, 255, 0.9);
     padding: 15px;
     border-radius: 10px;
@@ -83,7 +83,7 @@ main {
     max-height: 600px;
     overflow-y: auto;
     position: relative;
-    right: -20px; /* Feine Justierung, verschiebt "Aktuelles" noch weiter nach rechts */
+    right: -20px;
 }
 
 #aktuelles h3 {
@@ -119,14 +119,14 @@ main {
     border: none;
 }
 
-/* Beschreibung der Hochschule (nur für "Deine Hochschule") */
+/* Beschreibung der Hochschule */
 #beschreibung p {
     margin-bottom: 15px;
 }
 
-/* Studiengänge (nur auf der Seite "Deine Hochschule") */
+/* Studiengänge */
 body.deine-hochschule main {
-    display: block; /* Einspaltiges Layout nur für "Deine Hochschule" */
+    display: block;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -143,9 +143,9 @@ body.deine-hochschule #studiengaenge h2 {
 
 body.deine-hochschule .studiengaenge-container {
     display: flex;
-    flex-wrap: wrap; /* Mehrere Zeilen zulassen */
-    gap: 20px; /* Abstand zwischen den Kacheln */
-    justify-content: space-between; /* Kacheln gleichmäßig verteilen */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 body.deine-hochschule .studiengang {
@@ -153,9 +153,9 @@ body.deine-hochschule .studiengang {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(25% - 20px); /* Jede Kachel nimmt ca. 25% der Breite ein */
-    min-width: 220px; /* Minimalbreite für schmale Bildschirme */
-    max-width: 300px; /* Maximalbreite der Kacheln */
+    flex: 1 1 calc(25% - 20px);
+    min-width: 220px;
+    max-width: 300px;
     text-align: center;
 }
 
@@ -178,6 +178,10 @@ body.deine-hochschule .studiengang ul li {
 /* Abschnitte auf der Seite "Dein Campus" */
 body.dein-campus section {
     margin-bottom: 40px;
+    background: rgba(240, 240, 240, 1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 body.dein-campus section h2 {
@@ -186,12 +190,22 @@ body.dein-campus section h2 {
     font-size: 1.5em;
 }
 
-body.dein-campus section p, body.dein-campus section ul {
+body.dein-campus section p,
+body.dein-campus section ul {
     margin-bottom: 15px;
     font-size: 1em;
 }
 
-/* Buttons für interne Navigation */
+/* Campusplan */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
 .section-nav {
     display: flex;
     justify-content: space-evenly;
@@ -207,11 +221,29 @@ body.dein-campus section p, body.dein-campus section ul {
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
 .section-nav button:hover {
     background: #20A6DF;
+    transform: scale(1.1);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #2DC64D;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.button:hover {
+    background: #20A6DF;
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -239,23 +271,32 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     main {
-        flex-direction: column; /* Vertikales Layout bei kleineren Bildschirmen */
+        flex-direction: column;
     }
 
-    #aktuelles {
-        max-height: 400px; /* Reduziertes Layout für mobile Geräte */
+    .highlight-box {
+        padding: 15px;
     }
 
-    body.deine-hochschule .studiengang {
-        flex: 1 1 100%; /* Kacheln werden einspaltig auf kleineren Geräten */
+    body.dein-campus section h2 {
+        font-size: 1.5em;
+    }
+
+    .responsive-img {
+        margin: 15px 0;
     }
 
     .section-nav {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
     }
 
     .section-nav button {
         margin-bottom: 10px;
+        width: 100%;
+    }
+
+    body.deine-hochschule .studiengang {
+        flex: 1 1 100%;
     }
 }
