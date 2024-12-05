@@ -3,64 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puuuups</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 14px 20px;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Universitäts-Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Willkommen auf meiner Website</h1>
-        <p>Dies ist eine einfache Startseite</p>
+        <h1>Willkommen an der Universität</h1>
     </header>
-    <nav>
-        <a href="#">Startseite</a>
-        <a href="#">Über uns</a>
-        <a href="#">Kontakt</a>
-    </nav>
     <main>
-        <h2>Hallo, Welt!</h2>
-        <p>Dies ist der Hauptbereich Ihrer Startseite. Fügen Sie hier Inhalte hinzu!</p>
+        <section id="intro">
+            <!-- Eingebettetes YouTube-Video -->
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/VIDEO_ID" 
+                    title="YouTube Video Player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p>Willkommen auf unserer Website! Hier finden Sie alle wichtigen Informationen über unseren Campus, Studiengänge und Services.</p>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Meine Website. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 Universität - <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
     </footer>
 </body>
 </html>
