@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    background: #FFA07A; /* Dezentes Orange */
+    background: #FFA500; /* Orange */
     color: black; /* Schriftfarbe schwarz */
     padding: 20px 10px;
     text-align: center;
@@ -255,7 +255,7 @@ footer {
     position: relative; /* Footer ist nicht mehr fixiert */
     bottom: 0;
     width: 100%;
-    background: #FFA07A; /* Dezentes Orange */
+    background: #FFA500; /* Orange */
     color: black; /* Schriftfarbe schwarz */
     text-align: center;
     padding: 10px 0;
