@@ -182,8 +182,9 @@ body.dein-campus section {
     margin-bottom: 40px;
     background: rgba(240, 240, 240, 1);
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
 }
 
 body.dein-campus section h2 {
