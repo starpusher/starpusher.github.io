@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="kontakt">
+    <header>
+        <h1>Kontakt</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="deine-hochschule.html">Hochschule</a></li>
+                <li><a href="dein-campus.html">Campus</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="kontaktdaten">
+            <h2>Kontaktdaten</h2>
+            <p><strong>Campus Rotenbühl</strong><br>
+            Waldhausweg 14<br>
+            66123 Saarbrücken</p>
+            <p>t: +49 (0) 681 58 67 - 512<br>
+            f: +49 (0) 681 58 67 - 507</p>
+        </section>
+
+        <section id="oeffnungszeiten">
+            <h2>Öffnungszeiten</h2>
+            <h3>In der Vorlesungszeit</h3>
+            <ul>
+                <li>Montag bis Donnerstag: 6:45 Uhr bis 21:00 Uhr</li>
+                <li>Freitag: 6:45 Uhr bis 19:00 Uhr</li>
+                <li>Samstag: 7:30 Uhr bis 16:00 Uhr (Gebäude E geschlossen)</li>
+            </ul>
+            <h3>In der vorlesungsfreien Zeit</h3>
+            <ul>
+                <li>Montag bis Freitag: 6:45 Uhr bis 19:00 Uhr</li>
+                <li>Samstag: 7:30 Uhr bis 16:00 Uhr (Gebäude E geschlossen)</li>
+            </ul>
+        </section>
+
+        <section id="kontaktformular">
+            <h2>Kontaktformular</h2>
+            <form action="#" method="POST">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Ihre E-Mail-Adresse">
+
+                <label for="nachricht">Nachricht:</label>
+                <textarea id="nachricht" name="nachricht" rows="5" required placeholder="Ihre Nachricht"></textarea>
+
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+
+        <section id="terminvereinbarung">
+            <h2>Terminvereinbarung</h2>
+            <!-- Calendly Inline-Widget Beginn -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/chrislbw" style="min-width:320px;height:700px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly Inline-Widget Ende -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hochschule - Alle Rechte vorbehalten | <a href="datenschutz.html">Datenschutz</a> | <a href="impressum.html">Impressum</a></p>
+    </footer>
+</body>
+</html>
 
