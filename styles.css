@@ -263,6 +263,21 @@ footer {
     border-top: 2px solid #333; /* Dezente Trennlinie */
 }
 
+/* Platz für Footer */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Stellt sicher, dass der Inhalt die gesamte Höhe einnimmt */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Lässt das `main`-Element den verbleibenden Platz einnehmen */
+    padding-bottom: 60px; /* Platz für den Footer */
+}
+
+
 /* Kontaktseite */
 body.kontakt main {
     display: block;
