@@ -272,36 +272,48 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Kontaktseite */
+body.kontakt main {
+    display: block;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
+body.kontakt #kontaktdaten,
+body.kontakt #oeffnungszeiten,
+body.kontakt #kontaktformular,
+body.kontakt #terminvereinbarung {
+    margin-bottom: 30px;
+}
 
-    .highlight-box {
-        padding: 15px;
-    }
+body.kontakt form {
+    display: flex;
+    flex-direction: column;
+}
 
-    body.dein-campus section h2 {
-        font-size: 1.5em;
-    }
+body.kontakt form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
-    .responsive-img {
-        margin: 15px 0;
-    }
+body.kontakt form input,
+body.kontakt form textarea,
+body.kontakt form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-    .section-nav {
-        flex-direction: column;
-        align-items: stretch;
-    }
+body.kontakt form button {
+    background: #2DC64D;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
 
-    .section-nav button {
-        margin-bottom: 10px;
-        width: 100%;
-    }
-
-    body.deine-hochschule .studiengang {
-        flex: 1 1 100%;
-    }
+body.kontakt form button:hover {
+    background: #20A6DF;
 }
